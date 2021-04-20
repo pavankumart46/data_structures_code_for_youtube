@@ -1,0 +1,20 @@
+Jump Search Algorithm
+
+1. Find the Sqaure root of the size of the Array. 
+   Set variable "low" to 0.
+   (Store the result in a variable, this is going to be the "jump")
+   
+2. Loop through the array with a gap of jump.
+
+3. check if the current value matches the element we are searching for.
+	3.1 if yes, return the index position
+	3.2 if the current value is less than the element,
+		make "low" value to the current index.
+	3.3 if the current value is greater than the element,
+		break the loop as the value will be found (if present)
+		before we encounter this current value.
+		
+4. Apply Linear Search algorithm from the current low value till the 
+   end of the loop.
+   
+5. Return -1 if the element is not found
